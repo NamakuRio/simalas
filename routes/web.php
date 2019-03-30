@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//landing
+Route::get('/', 'LandingController@index')->name('landing');
+
+//dashboard
+Route::get('/dashboard','DashboardController@index')->name('dashboard');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
